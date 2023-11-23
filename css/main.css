@@ -1,7 +1,7 @@
 /* CSS Geral */
 body {
     font-family: "Open Sans", sans-serif;
-    color: #272829;
+    color: #2b2b2b;
 }
 a {
     color: #149ddd;
@@ -32,21 +32,25 @@ h6 {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    transition: all 0.4s;    
-}
-.back-to-top i {
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
     font-size: 28px;
     color: #fff;
     line-height: 0;
-}
-.back-to-top:hover {
+  }
+  
+  .back-to-top:hover {
     background: #2eafec;
     color: #fff;
-}
-.back-to-top.active{
+  }
+  
+  .back-to-top.active {
     visibility: visible;
     opacity: 1;
-}
+  }
+  
 /* -----------------------------------
 # HEADER
 ----------------------------------------- */
@@ -103,7 +107,7 @@ h6 {
 }
 #header .profile .social-links a:hover {
   background: #149ddd;
-  color: #fff;
+  color: #040b14;
   text-decoration: none;
 }
 /* fim header */ 
@@ -195,26 +199,22 @@ h6 {
     border-radius: 50px;
     cursor: pointer;
 }
-.mobile-nav-active {
+.mobile-nav-active{
     overflow: hidden;
 }
 .mobile-nav-active #header {
     left: 0;
 }
 
-/*
-
-============ HERO ============
-
+/* 
+==========  HERO   ==============
 */
-
 #hero {
     width: 100%;
     height: 100vh;
-    background: url ("../img/hero-bg2.jpg") top center;
-    background-size: cover;
+    background: url("../img/dev.jpg") top center;
+    background-size: cover;        
 }
-
 #hero::before{
     content: "";
     background: rgba(5, 13, 24, 0.3);
@@ -225,13 +225,11 @@ h6 {
     right: 0;
     z-index: 1;
 }
-  
 #hero .hero-container {
     position: relative;
     z-index: 2;
-    min-height: 300px;
+    min-width: 300px;
 }
-
 #hero h1{
     margin: 0 0 10px 0;
     font-size: 64px;
@@ -239,30 +237,27 @@ h6 {
     font-weight: 700;
     line-height: 56px;
 }
-
 #hero p{
     margin-bottom: 50px;
     color: #fff;
     font-size: 26px;
     font-family: "Poppins" sans-serif;
 }
-
 #hero p span{
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-radius: 3px solid #149ddd;
-    color:#fff 
+    color: #fff;
 }
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
     }
-    
 }
 @media (max-width: 768px) {
     #hero h1{
         font-size: 28px;
-        line-height: 36px;    
+        line-height: 36px;
     }
     #hero h2 {
         font-size: 18px;
@@ -270,10 +265,7 @@ h6 {
         margin-bottom: 30px;
     }
 }
-
-/*      Section Geral       */
-
-
+/*    Section Geral     */
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -281,10 +273,10 @@ section {
 .section-bg{
     background: #f5f8fd;
 }
-.section-title {
+.section-title{
     padding-bottom: 30px;
 }
-.section-title h2 {
+.section-title h2{
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -297,45 +289,41 @@ section {
     position: absolute;
     display: block;
     width: 50px;
+    height: 3px;
     background: #149ddd;
     bottom: 0;
     left: 0;
-}
-
-.abou.content h3 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #173b6c;
 }
 .section-title p {
     margin-bottom: 0;
 }
 
-/* Sobre ======= */
-
-.about.content ul {
+/*  Sobre   =========  */
+.about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+}
+.about .content ul{
     list-style: none;
     padding: 0;
 }
-
-.about.content ul li {
+.about .content ul li{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
-.about.content ul strong {
+.about .content ul strong {
     margin-right: 10px;
 }
-.abou.content ul i {
+.about .content ul i {
     font-size: 16px;
     margin-right: 5px;
     color: #149ddd;
     line-height: 0;
 }
 
-
-/* Feitos */
-
+/* Feitos  */
 .facts {
     padding-bottom: 30px;
 }
@@ -349,26 +337,23 @@ section {
     color: #149ddd;
     float: left;
     line-height: 0;
-
 }
-.facts .count-box span {
+.facts .count-box span{
     font-size: 48px;
     line-height: 40px;
     display: block;
     font-weight: 700;
-    color:#040b14;
+    color: #040b14;
     margin-left: 60px;
 }
 .facts .count-box p{
     padding: 15px 0 0 0;
     margin: 0 0 0 60px;
-    font-family: "Raleway" , sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
-    color:#122f57;
-
+    color: #122f57;
 }
-
-.facts .count-box a{
+.facts .count-box a {
     font-weight: 600;
     display: block;
     margin-top: 20px;
@@ -377,26 +362,89 @@ section {
     font-family: "Poppins", sans-serif;
     transition: ease-in-out 0.3s;
 }
-
-.facts .countbox a:hover {
+.facts .count-box a:hover{
     color: #2eafec;
 }
 
-/* SKILLS */
-
+/*  SKILLS */
 .skills .progress{
-    height: 0;
+    height: 60px;
     display: block;
     background: none;
     border-radius: 0;
 }
-
 .skills .progress .skill{
     padding: 0;
-    margin: 0 0 6px;
+    margin: 0 0 6px 0;
     text-transform: uppercase;
     display: block;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    color:#040b14;
+    color: #040b14;
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar {
+    background: #dce8f8;
+    height: 10px;
+}
+.skills .progress-bar{
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background: #149ddd;
+}
+
+/*Resumo */
+
+.resume .resume-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #040b14;
+}
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #173b6c;
+    position: relative;
+}
+
+.resume .resume-title h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+.resume .resume-item::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top:0;
+    background: #fff;
+    border: 2px solid #122f57;
+
 }
